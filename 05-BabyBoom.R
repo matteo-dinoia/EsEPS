@@ -1,0 +1,7 @@
+library(UsingR)
+data("babyboom")
+str(babyboom)
+diff_born<-diff(babyboom$running.time)
+hist(babyboom$running.time)
+hist(diff_born, 40)
+sd(diff_born)/mean(diff_born)
